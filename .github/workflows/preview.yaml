@@ -1,5 +1,5 @@
 ---
-name: Backlog Limits Checker
+name: Backlog Limits Checker Preview
 concurrency: preview-${{ github.ref }}
 # yamllint disable-line rule:truthy
 on:
