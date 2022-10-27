@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           persist-credentials: false
-      - uses: kalikiana/backlogger@main
+      - uses: openSUSE/backlogger@main
         with:
           redmine_api_key: ${{ secrets.REDMINE_API_KEY }}
           args: --reminder-comment-on-issues

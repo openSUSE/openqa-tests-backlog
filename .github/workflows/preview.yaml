@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: kalikiana/backlogger@main
+      - uses: openSUSE/backlogger@main
         with:
           redmine_api_key: ${{ secrets.REDMINE_API_KEY }}
       - uses: rossjrw/pr-preview-action@v1
