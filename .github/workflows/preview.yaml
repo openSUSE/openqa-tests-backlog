@@ -1,7 +1,7 @@
 ---
-name: Backlog Limits Checker
-# yamllint disable-line rule:truthy
+name: Backlog Limits Checker Preview
 concurrency: preview-${{ github.ref }}
+# yamllint disable-line rule:truthy
 on:
   pull_request:
     types:
@@ -16,8 +16,8 @@ jobs:
   backlogger:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: kalikiana/backlogger@main
+      - uses: actions/checkout@v3
+      - uses: openSUSE/backlogger@main
         with:
           redmine_api_key: ${{ secrets.REDMINE_API_KEY }}
       - uses: rossjrw/pr-preview-action@v1
