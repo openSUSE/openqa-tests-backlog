@@ -16,7 +16,7 @@ jobs:
   backlogger:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744  # v3
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v3
       - uses: openSUSE/backlogger@3d037a7decf5a6baf4adb762d4bb33058c5f1ee1  # main
         with:
           redmine_api_key: ${{ secrets.REDMINE_API_KEY }}
